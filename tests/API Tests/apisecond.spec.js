@@ -8,7 +8,7 @@ test("Verify List of users Get APi", async ({request})=>{
      } );
 
 
-  expect(getAllUsers.ok()).toBeTruthy();  // True 
+  expect(getAllUsers.ok()).toBeFalsy();  // True 
   expect(getAllUsers.status()).toBe(200);
 
   console.log(await getAllUsers.json())
